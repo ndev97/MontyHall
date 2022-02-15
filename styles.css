@@ -1,3 +1,5 @@
+
+/*Index principal*/
 body{
     background-color: #181818;
     color:aliceblue;
@@ -22,14 +24,7 @@ a{
     justify-content: space-between;
     padding-top: 5px;
 }
-.tituloDos{
-    display:grid;
-    grid-template-columns: 80px 550px;
-    grid-template-rows: 30px;
-    justify-content: space-around;
-    padding-top: 5px;
-    margin-right: 40px;
-}
+
 #principal{
     margin-top: 0px;
     margin-left: 30px;
@@ -57,11 +52,11 @@ h1{
 #empezar{
     display:flexbox;
 }
-h3{
+.instrucciones{
     padding-top: 10px;
 }
 .pics{
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -130,8 +125,30 @@ input{
     background-color: #181818;
     color: rgb(255, 245, 231);
 }
+
+
+
+/*Index Explicacion*/
+
+.tituloDos{
+    display:grid;
+    grid-template-columns: 80px 550px;
+    grid-template-rows: 30px;
+    justify-content: space-around;
+    padding-top: 5px;
+    margin-right: 40px;
+}
+h1{
+    margin-top: -20px;
+}
 .espacio-txt{
     margin-left: 30px;
     margin-right: 30px;
     font-size: 17px;
+}
+p{
+    margin-top: -8px;
+}
+.spoiler{
+    font-size: 20px;
 }
