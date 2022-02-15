@@ -1,0 +1,137 @@
+body{
+    background-color: #181818;
+    color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    background-color: #373737;
+    border-radius: 6px;
+    height: 800px;
+    width: 700px;
+    padding: 5px;
+}
+.titulo{
+    display:grid;
+    grid-template-columns: 550px 150px;
+    grid-template-rows: 30px;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.tituloDos{
+    display:grid;
+    grid-template-columns: 80px 550px;
+    grid-template-rows: 30px;
+    justify-content: space-around;
+    padding-top: 5px;
+    margin-right: 40px;
+}
+#principal{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+h1{
+    margin-top: 2px;
+}
+.btn-expl{
+    background-color: rgb(199, 85, 19);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 15px;
+}
+.btn-expl:hover{
+    background-color: rgb(250, 161, 109);
+    color: #000000;
+    transition: 0.5s;
+}
+
+#empezar{
+    display:flexbox;
+}
+h3{
+    padding-top: 10px;
+}
+.pics{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    transition: 500ms;
+}
+img:hover{
+    transform:scale(1.1);
+}
+
+.btn{
+    background-color: rgb(199, 85, 19);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 40px;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn:hover{
+    background-color: rgb(250, 161, 109);
+    color: #000000;
+    transition: 0.5s;
+}
+
+.botones-control{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-estadisticas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10px;
+    padding-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.container-victorias{
+    padding-top: 10px;
+}
+.container-derrotas{
+    padding-top: 10px;
+}
+
+.cont-input{
+    padding-top: 5px;
+}
+input{
+    padding: 5px;
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.veces-jugado{
+    padding-top: 10px;
+}
+.estadisticas{
+    text-align: center;
+    background-color: #181818;
+    color: rgb(255, 245, 231);
+}
+.espacio-txt{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+}

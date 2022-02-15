@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty Hall Paradox</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/door_icon.ico">
+</head>
+<body>
+    
+
+    <div class="contenedor" id="Juego">
+
+        <div class="titulo">
+            <h2 id="principal">Paradoja de Monty Hall</h2>
+            <a  class="btn-expl" id="Btnexplicacion" href="Explicacion/explicacion.html">Explicación</a>
+        </div>
+
+        <div class="pics">
+            <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaUno">
+            <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaDos">
+            <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaTres">
+        </div>
+
+        <div class="botones-control">
+            <div class="btnjugar">
+                <button class="btn" id="Reset" onclick="PlayAgain()">Volver a jugar</button>
+            </div>
+            <div class="btnreset">
+                <button class="btn" onclick="Restaurar()">Reiniciar contadores</button>
+            </div>
+        </div>
+
+        <div class="container-estadisticas">
+            <div class="container-victorias">
+                <div>
+                    Victorias:
+                </div>
+                <div class="cont-input">
+                    <input type="text" class="estadisticas" id="victorias" placeholder="0">
+                </div>
+            </div>
+
+            <div class="container-derrotas">
+                <div>
+                    Derrotas:
+                </div>
+                <div class="cont-input">
+                    <input type="text" class="estadisticas" id="derrotas" placeholder="0">
+                </div>
+            </div>
+
+            <div class="veces-jugado">
+                <div>
+                    Veces Jugado:
+                </div>
+                <div class="cont-input">
+                    <input type="text" class="estadisticas" class="vecesjugado" id="totalJugado" placeholder="0">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    
+    <script src="code.js"></script>
+</body>
+</html>
