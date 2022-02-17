@@ -12,24 +12,32 @@
 <body>
     
 
-    <div class="contenedor" id="Juego">
+    <div class="contenedor">
 
+
+        <!--Titulo/encabezado-->
         <div class="titulo">
             <h2 id="principal">Paradoja de Monty Hall</h2>
             <a  class="btn-expl" id="Btnexplicacion" href="Explicacion/explicacion.html">Explicación</a>
         </div>
         
+        
+        <!--Titulo de las instrucciones-->
         <div class="instrucciones">
             <p>- Para jugar el juego, selecciona una puerta</p>
             <p>- Despues de ver donde no está el premio, clickea otra puerta para "Quedarte" o "Cambiar"</p>
         </div>
 
+
+        <!--Fotos-->
         <div class="pics">
             <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaUno">
             <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaDos">
             <img src="images/door_closed1.png" alt="puerta cerrada" id="cerradaTres">
         </div>
 
+
+        <!--Botones-->
         <div class="botones-control">
             <div class="btnjugar">
                 <button class="btn" id="Reset" onclick="PlayAgain()">Volver a jugar</button>
@@ -39,6 +47,8 @@
             </div>
         </div>
 
+
+        <!--Inputs de estadisticas-->
         <div class="container-estadisticas">
             <div class="container-victorias">
                 <div>
@@ -66,10 +76,32 @@
                     <input type="text" class="estadisticas" class="vecesjugado" id="totalJugado" placeholder="0">
                 </div>
             </div>
-
-
         </div>
 
+
+        <!--
+        <hr class="linea">
+
+
+        
+        <div class="containter-automatizado">
+
+
+            <div class="seleccionador">
+
+                <select id="list">
+                    <option value="cambiar">Cambiar</option>
+                    <option value="quedarse">Quedarse</option>
+                </select>
+            </div>
+
+
+            <div>
+                <input class="estadisticas" type="text" id="auto">
+            </div>
+            
+
+        </div>-->
 
 
     </div>

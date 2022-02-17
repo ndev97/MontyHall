@@ -13,7 +13,7 @@ a{
 .contenedor{
     background-color: #373737;
     border-radius: 6px;
-    height: 800px;
+    height: 650px;
     width: 700px;
     padding: 5px;
 }
@@ -44,9 +44,10 @@ h1{
     margin-right: 15px;
 }
 .btn-expl:hover{
-    background-color: rgb(250, 161, 109);
+    background-color: rgb(211, 116, 60);
     color: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
+    box-shadow: #140801d8 6px 6px 4px;
 }
 
 #empezar{
@@ -55,8 +56,11 @@ h1{
 .instrucciones{
     padding-top: 10px;
 }
+p{
+    font-size: 14px;
+}
 .pics{
-    padding-top: 10px;
+    padding-top: 2px;
     display: flex;
     justify-content: space-around;
 }
@@ -66,6 +70,7 @@ img{
 }
 img:hover{
     transform:scale(1.1);
+    cursor: pointer;
 }
 
 .btn{
@@ -76,16 +81,17 @@ img:hover{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 13px;
     text-align: center;
-    padding-top: 5px;
-    margin-top: 40px;
+    margin-top: 18px;
     padding: 8px;
     padding-left: 30px;
     padding-right: 30px;
+    box-shadow: #1d0b02c2 2px 2px 4px;
 }
 .btn:hover{
-    background-color: rgb(250, 161, 109);
+    background-color: rgb(211, 116, 60);
     color: #000000;
-    transition: 0.5s;
+    transition: 0.2s;
+    box-shadow: #140801d8 6px 6px 4px;
 }
 
 .botones-control{
@@ -96,10 +102,9 @@ img:hover{
 .container-estadisticas{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 10px;
-    padding-top: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
+    padding-top: 5px;
 }
 .container-victorias{
     padding-top: 10px;
@@ -112,9 +117,12 @@ img:hover{
     padding-top: 5px;
 }
 input{
-    padding: 5px;
+    padding: 2px;
     font-size: 13px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    box-shadow: #000000c2 2px 3px 5px;
+    border-radius: 2px;
 }
 
 .veces-jugado{
@@ -126,6 +134,17 @@ input{
     color: rgb(255, 245, 231);
 }
 
+
+/*Automatizados*/
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container-automatizado{
+    display: flex;
+    justify-content: start;
+}
 
 
 /*Index Explicacion*/
@@ -146,7 +165,7 @@ h1{
     margin-right: 30px;
     font-size: 17px;
 }
-p{
+.p-exp{
     margin-top: -8px;
 }
 .spoiler{
