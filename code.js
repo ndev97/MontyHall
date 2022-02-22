@@ -189,7 +189,7 @@ function PlayAgain(){
     puertaD.src ="images/door_closed1.png";
     puertaT.src ="images/door_closed1.png";
 
-    console.log("Play Again!");
+    //console.log("Play Again!");
 }
 
 function subirVictorias(){
@@ -216,4 +216,67 @@ function Restaurar(){
     document.getElementById("victorias").value = victorias;
     document.getElementById("derrotas").value = derrotas;
     document.getElementById("totalJugado").value = played;
+}
+
+
+
+
+
+let btnFuncion = document.getElementById("btnFuncion");
+btnFuncion.addEventListener("click", Repetir);
+
+function Repetir(){
+
+    let repeticiones = document.getElementById("repeticiones").value;
+    repeticiones = parseInt(repeticiones);
+
+    let estrategia = document.getElementById("list").value;
+    
+    if(isNaN(repeticiones)){
+        alert("Ingresar solo numeros"), document.getElementById("repeticiones").value = "";
+    }
+
+    if(estrategia == "cambiar"){
+
+        for(i=1; i <= repeticiones; i++){
+            puertasAleatoriasCambiar();
+            
+        }
+    }
+
+    if(estrategia == "quedarse"){
+        for(i=1; i <= repeticiones * 3; i++){
+            puertasAleatoriasQuedarse();
+        }
+    }
+
+}
+
+
+
+
+let randomUno = document.getElementById("cerradaUno");
+let randomDos = document.getElementById("cerradaDos");
+let randomTres = document.getElementById("cerradaTres");
+
+randomUno.addEventListener("click", puertasAleatoriasCambiar);
+function puertasAleatoriasCambiar(){
+
+    puertaUno();
+    console.log(`clickCount: ${clickCount}, num puerta ${numRandom}`);
+
+
+    if(numRandom == 2){
+        puertaTres();
+    } else if(numRandom == 3){
+        puertaDos();
+    }
+
+    PlayAgain();
+
+}
+
+function puertasAleatoriasQuedarse(){
+
+    puertaUno();
 }

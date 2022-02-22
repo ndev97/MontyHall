@@ -6,14 +6,14 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
 a{
     text-decoration: none;
 }
-
 .contenedor{
     background-color: #373737;
     border-radius: 6px;
-    height: 650px;
+    height: 700px;
     width: 700px;
     padding: 5px;
 }
@@ -32,6 +32,7 @@ a{
 h1{
     margin-top: 2px;
 }
+
 .btn-expl{
     background-color: rgb(199, 85, 19);
     color: rgb(255, 255, 255);
@@ -124,7 +125,6 @@ input{
     box-shadow: #000000c2 2px 3px 5px;
     border-radius: 2px;
 }
-
 .veces-jugado{
     padding-top: 10px;
 }
@@ -135,20 +135,33 @@ input{
 }
 
 
-/*Automatizados*/
+
+/*Automatizador*/
 hr{
     margin-top: 25px;
-    margin-bottom: 25px;
+}
+.h4-titulo{
+    margin-top: 5px;
+}
+.container-automatizado{
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 40px;
+    align-self: center;
+}
+.seleccionador{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.switcher{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.container-automatizado{
-    display: flex;
-    justify-content: start;
-}
 
 
 /*Index Explicacion*/
-
 .tituloDos{
     display:grid;
     grid-template-columns: 80px 550px;
