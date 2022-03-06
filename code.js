@@ -1,4 +1,3 @@
-
 let puertaU = document.getElementById("cerradaUno");
 let puertaD = document.getElementById("cerradaDos");
 let puertaT = document.getElementById("cerradaTres");
@@ -65,6 +64,7 @@ function puertaUno(){
     }
 
 }
+
 
 //Segunda Puerta
 botonDos = document.getElementById("cerradaDos");
@@ -229,6 +229,11 @@ function Repetir(){
 
     let repeticiones = document.getElementById("repeticiones").value;
     repeticiones = parseInt(repeticiones);
+
+    if(isNaN(repeticiones)){
+        alert("solo ingresar numeros");
+        return document.getElementById("repeticiones").value = "";
+    }
 
     let estrategia = document.getElementById("list").value;
     
